@@ -6,4 +6,3 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(assignment_01)
-subdirs(assignment_03)
