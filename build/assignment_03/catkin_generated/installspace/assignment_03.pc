@@ -1,0 +1,8 @@
+prefix=/home/bolduc/AUE893_Bolduc/install
+
+Name: assignment_03
+Description: Description of assignment_03
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bolduc/AUE893_Bolduc/install/lib 
+Requires: 

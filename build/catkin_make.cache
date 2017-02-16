@@ -1,2 +1,2 @@
-assignment_01
+assignment_01:assignment_03
 -DCATKIN_DEVEL_PREFIX=/home/bolduc/AUE893_Bolduc/devel -DCMAKE_INSTALL_PREFIX=/home/bolduc/AUE893_Bolduc/install -G Unix Makefiles
