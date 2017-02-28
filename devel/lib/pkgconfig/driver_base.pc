@@ -1,0 +1,8 @@
+prefix=/home/bolduc/AUE893_Bolduc/devel
+
+Name: driver_base
+Description: Description of driver_base
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bolduc/AUE893_Bolduc/devel/lib 
+Requires: 

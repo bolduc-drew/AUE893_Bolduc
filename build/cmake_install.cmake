@@ -118,6 +118,16 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/bolduc/AUE893_Bolduc/build/gtest/cmake_install.cmake")
   include("/home/bolduc/AUE893_Bolduc/build/assignment_01/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/assignment_03/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/assignment_04/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/driver_common/driver_base/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/driver_common/driver_common/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/hokuyo_node/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/mybot_control/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/mybot_description/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/mybot_gazebo/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/mybot_navigation/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/driver_common/timestamp_tools/cmake_install.cmake")
 
 endif()
 

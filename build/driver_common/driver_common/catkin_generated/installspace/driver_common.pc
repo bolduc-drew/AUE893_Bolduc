@@ -1,0 +1,8 @@
+prefix=/home/bolduc/AUE893_Bolduc/install
+
+Name: driver_common
+Description: Description of driver_common
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bolduc/AUE893_Bolduc/install/lib 
+Requires: 

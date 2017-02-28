@@ -1,0 +1,8 @@
+prefix=/home/bolduc/AUE893_Bolduc/install
+
+Name: mybot_description
+Description: Description of mybot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bolduc/AUE893_Bolduc/install/lib 
+Requires: 

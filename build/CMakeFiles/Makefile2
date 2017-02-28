@@ -815,6 +815,186 @@ clean: assignment_01/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory assignment_03
+
+# Convenience name for "all" pass in the directory.
+assignment_03/all:
+
+.PHONY : assignment_03/all
+
+# Convenience name for "clean" pass in the directory.
+assignment_03/clean:
+
+.PHONY : assignment_03/clean
+
+# Convenience name for "preinstall" pass in the directory.
+assignment_03/preinstall:
+
+.PHONY : assignment_03/preinstall
+
+#=============================================================================
+# Directory level rules for directory assignment_04
+
+# Convenience name for "all" pass in the directory.
+assignment_04/all:
+
+.PHONY : assignment_04/all
+
+# Convenience name for "clean" pass in the directory.
+assignment_04/clean:
+
+.PHONY : assignment_04/clean
+
+# Convenience name for "preinstall" pass in the directory.
+assignment_04/preinstall:
+
+.PHONY : assignment_04/preinstall
+
+#=============================================================================
+# Directory level rules for directory driver_common/driver_base
+
+# Convenience name for "all" pass in the directory.
+driver_common/driver_base/all:
+
+.PHONY : driver_common/driver_base/all
+
+# Convenience name for "clean" pass in the directory.
+driver_common/driver_base/clean:
+
+.PHONY : driver_common/driver_base/clean
+
+# Convenience name for "preinstall" pass in the directory.
+driver_common/driver_base/preinstall:
+
+.PHONY : driver_common/driver_base/preinstall
+
+#=============================================================================
+# Directory level rules for directory driver_common/driver_common
+
+# Convenience name for "all" pass in the directory.
+driver_common/driver_common/all:
+
+.PHONY : driver_common/driver_common/all
+
+# Convenience name for "clean" pass in the directory.
+driver_common/driver_common/clean:
+
+.PHONY : driver_common/driver_common/clean
+
+# Convenience name for "preinstall" pass in the directory.
+driver_common/driver_common/preinstall:
+
+.PHONY : driver_common/driver_common/preinstall
+
+#=============================================================================
+# Directory level rules for directory hokuyo_node
+
+# Convenience name for "all" pass in the directory.
+hokuyo_node/all:
+
+.PHONY : hokuyo_node/all
+
+# Convenience name for "clean" pass in the directory.
+hokuyo_node/clean:
+
+.PHONY : hokuyo_node/clean
+
+# Convenience name for "preinstall" pass in the directory.
+hokuyo_node/preinstall:
+
+.PHONY : hokuyo_node/preinstall
+
+#=============================================================================
+# Directory level rules for directory mybot_control
+
+# Convenience name for "all" pass in the directory.
+mybot_control/all:
+
+.PHONY : mybot_control/all
+
+# Convenience name for "clean" pass in the directory.
+mybot_control/clean:
+
+.PHONY : mybot_control/clean
+
+# Convenience name for "preinstall" pass in the directory.
+mybot_control/preinstall:
+
+.PHONY : mybot_control/preinstall
+
+#=============================================================================
+# Directory level rules for directory mybot_description
+
+# Convenience name for "all" pass in the directory.
+mybot_description/all:
+
+.PHONY : mybot_description/all
+
+# Convenience name for "clean" pass in the directory.
+mybot_description/clean:
+
+.PHONY : mybot_description/clean
+
+# Convenience name for "preinstall" pass in the directory.
+mybot_description/preinstall:
+
+.PHONY : mybot_description/preinstall
+
+#=============================================================================
+# Directory level rules for directory mybot_gazebo
+
+# Convenience name for "all" pass in the directory.
+mybot_gazebo/all:
+
+.PHONY : mybot_gazebo/all
+
+# Convenience name for "clean" pass in the directory.
+mybot_gazebo/clean:
+
+.PHONY : mybot_gazebo/clean
+
+# Convenience name for "preinstall" pass in the directory.
+mybot_gazebo/preinstall:
+
+.PHONY : mybot_gazebo/preinstall
+
+#=============================================================================
+# Directory level rules for directory mybot_navigation
+
+# Convenience name for "all" pass in the directory.
+mybot_navigation/all:
+
+.PHONY : mybot_navigation/all
+
+# Convenience name for "clean" pass in the directory.
+mybot_navigation/clean:
+
+.PHONY : mybot_navigation/clean
+
+# Convenience name for "preinstall" pass in the directory.
+mybot_navigation/preinstall:
+
+.PHONY : mybot_navigation/preinstall
+
+#=============================================================================
+# Directory level rules for directory driver_common/timestamp_tools
+
+# Convenience name for "all" pass in the directory.
+driver_common/timestamp_tools/all:
+
+.PHONY : driver_common/timestamp_tools/all
+
+# Convenience name for "clean" pass in the directory.
+driver_common/timestamp_tools/clean:
+
+.PHONY : driver_common/timestamp_tools/clean
+
+# Convenience name for "preinstall" pass in the directory.
+driver_common/timestamp_tools/preinstall:
+
+.PHONY : driver_common/timestamp_tools/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

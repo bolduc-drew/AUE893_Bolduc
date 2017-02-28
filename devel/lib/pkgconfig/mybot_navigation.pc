@@ -1,0 +1,8 @@
+prefix=/home/bolduc/AUE893_Bolduc/devel
+
+Name: mybot_navigation
+Description: Description of mybot_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bolduc/AUE893_Bolduc/devel/lib 
+Requires: 

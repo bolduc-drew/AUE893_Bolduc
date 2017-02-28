@@ -1,0 +1,8 @@
+prefix=/home/bolduc/AUE893_Bolduc/install
+
+Name: hokuyo_node
+Description: Description of hokuyo_node
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bolduc/AUE893_Bolduc/install/lib 
+Requires: 

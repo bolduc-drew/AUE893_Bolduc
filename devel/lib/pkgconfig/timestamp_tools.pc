@@ -1,0 +1,8 @@
+prefix=/home/bolduc/AUE893_Bolduc/devel
+
+Name: timestamp_tools
+Description: Description of timestamp_tools
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bolduc/AUE893_Bolduc/devel/lib 
+Requires: 
