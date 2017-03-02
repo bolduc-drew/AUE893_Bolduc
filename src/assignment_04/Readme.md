@@ -14,10 +14,10 @@ roslaunch mybot_gazebo mybot_world.launch
 ## mybot PID Controller
 The PID script is turtlebot_app.py and should be run from AUE893_Bolduc/src/assignment_04/scripts using the command:
 
-First cd into proper directory:
+### First cd into proper directory:
 cd AUE893_Bolduc/src/assignment_04/scripts
 
-Then Execute Command:
+### Then Execute Command:
 python turtlebot_app.py
 
 Place obstacles, such as a cube and cabinet (seen below), in the map to test obstacle avoidance
