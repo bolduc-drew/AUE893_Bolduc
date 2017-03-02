@@ -178,19 +178,19 @@ class turtlebot_laser:
         # Reset Flag arrived pos
         self.Flag_arrived_pos = False
 
-        # # get current position
-        # current_x = self.turtlebot_odom.pose.pose.position.x
-        # current_y = self.turtlebot_odom.pose.pose.position.y
-        # # Get current distance to the goal
-        # current_distance = self.get_distance(
-        #     current_x, current_y, pos_x, pos_y)
+        # get current position
+        current_x = self.turtlebot_odom.pose.pose.position.x
+        current_y = self.turtlebot_odom.pose.pose.position.y
+        # Get current distance to the goal
+        current_distance = self.get_distance(
+            current_x, current_y, pos_x, pos_y)
 
-        # # Calculate angle
-        # target_yaw = math.atan2((pos_y - current_y), (pos_x - current_x))
-        # # Go to target orientation
-        # self.set_orientation(target_yaw)
-        # # Stop for 1 second
-        # time.sleep(1)
+        # Calculate angle
+        target_yaw = math.atan2((pos_y - current_y), (pos_x - current_x))
+        # Go to target orientation
+        self.set_orientation(target_yaw)
+        # Stop for 1 second
+        time.sleep(1)
 
         # Move straight to desired position.
 
@@ -360,15 +360,23 @@ def main():
 
     rospy.init_node("turtlebot_laser")
 
-    print "Move to (3.0, 0.0)"
-    turtlebot.move_to_goal(3.0, 0.0)
+    print "Move to (0.0, 0.0)"
+    turtlebot.move_to_goal(0.0, 0.0)
     print "Arrived."
 
-    print "Move to (-2.4, -1.0)"
-    turtlebot.move_to_goal(-2.4, -1.0)
+    print "Move to (5.0, 0.0)"
+    turtlebot.move_to_goal(5.0, 0.0)
     print "Arrived."
 
-    print "Done."
+    print "Move to (0.0, 5.0)"
+    turtlebot.move_to_goal(0.0, 5.0)
+    print "Arrived."
+
+    print "Move to (0.0, 0.0)"
+    turtlebot.move_to_goal(0.0, 0.0)
+    print "Arrived."
+
+print "Done."
 
 if __name__ == '__main__':
     try:
