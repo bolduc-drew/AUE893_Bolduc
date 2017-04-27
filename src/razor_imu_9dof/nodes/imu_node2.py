@@ -20,6 +20,8 @@ rospy.init_node("razor_node")
 pub = rospy.Publisher('imu', Imu, queue_size=1)
 pub2 = rospy.Publisher('traj', Point, queue_size=1)
 pub3 = rospy.Publisher('vel', Point, queue_size=1)
+# r = rospy.Rate(100)
+
 
 velMsg = Point()
 trajMsg = Point()
@@ -44,6 +46,9 @@ last_time = 0.0
 last_a_x=0
 last_a_y=0
 last_a_z = 0
+gravity=[0,0,1.0]
+rotatedGravity = [0,0,0]
+motionAcceleration =[0,0,0]
 
 default_port='/dev/ttyACM0'
 port = rospy.get_param('~port', default_port)
@@ -114,10 +119,34 @@ while not rospy.is_shutdown():
             acc_z = float(words[3])* accel_factor  + accel_factor 
         else:
             acc_z = 0
+
+
+
+
+        # Angle of rotation will come from RTImuLib
+
+        alpha= float(words[14])*degrees2rad
+        beta=  float(words[15])*degrees2rad
+        theta = float(words[16])*degrees2rad
+        rospy.loginfo(words[14])
+
+        rotationMatrix = [[math.cos(alpha)*math.cos(beta) , math.cos(alpha)*math.sin(beta)*math.sin(theta) - math.sin(alpha)*math.cos(theta) , math.cos(alpha)*math.sin(beta)*math.cos(theta) + math.sin(alpha)*math.sin(theta)],
+        [math.sin(alpha)*math.cos(beta) , math.sin(alpha)*math.sin(beta)*math.sin(theta) + math.cos(alpha)*math.cos(theta) , math.sin(alpha)*math.sin(beta)*math.cos(theta) - math.cos(alpha)*math.sin(theta)],
+        [-1* math.sin(beta),math.cos(beta)*math.sin(theta),math.cos(beta)*math.cos(theta)]]
         
-        imuMsg.linear_acceleration.x = acc_x
-        imuMsg.linear_acceleration.y = acc_y
-        imuMsg.linear_acceleration.z = acc_z
+
+        rotatedGravity[0]= gravity[0]*rotationMatrix[0][0] + gravity[1]*rotationMatrix[0][1] + gravity[2]*rotationMatrix[0][2]
+        rotatedGravity[1]= gravity[0]*rotationMatrix[1][0] + gravity[1]*rotationMatrix[1][1] + gravity[2]*rotationMatrix[1][2]
+        rotatedGravity[2]= gravity[0]*rotationMatrix[2][0] + gravity[1]*rotationMatrix[2][1] + gravity[2]*rotationMatrix[2][2]
+
+        motionAcceleration[0]=acc_x-rotatedGravity[0]
+        motionAcceleration[1]=acc_y-rotatedGravity[1]
+        motionAcceleration[2]=acc_z-rotatedGravity[2]
+
+
+        imuMsg.linear_acceleration.x = motionAcceleration[0]
+        imuMsg.linear_acceleration.y = motionAcceleration[1]
+        imuMsg.linear_acceleration.z = motionAcceleration[2]
         # angular_velocity in rad/sec
         imuMsg.angular_velocity.x = float(words[4])
         imuMsg.angular_velocity.y = float(words[5]) 
@@ -162,5 +191,7 @@ while not rospy.is_shutdown():
     pub.publish(imuMsg)
     pub2.publish(trajMsg)
     pub3.publish(velMsg)
+    
+    # r.sleep()
 
 ser.close
