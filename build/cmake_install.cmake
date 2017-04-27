@@ -128,6 +128,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/bolduc/AUE893_Bolduc/build/mybot_gazebo/cmake_install.cmake")
   include("/home/bolduc/AUE893_Bolduc/build/mybot_navigation/cmake_install.cmake")
   include("/home/bolduc/AUE893_Bolduc/build/driver_common/timestamp_tools/cmake_install.cmake")
+  include("/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/cmake_install.cmake")
 
 endif()
 

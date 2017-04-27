@@ -402,7 +402,7 @@ hokuyo_node_BINARY_DIR:STATIC=/home/bolduc/AUE893_Bolduc/build/hokuyo_node
 hokuyo_node_SOURCE_DIR:STATIC=/home/bolduc/AUE893_Bolduc/src/hokuyo_node
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/kinetic/lib/librostime.so
 
 //Dependencies for the target
 libhokuyo_LIB_DEPENDS:STATIC=general;/opt/ros/kinetic/lib/librosconsole.so;general;/opt/ros/kinetic/lib/librosconsole_log4cxx.so;general;/opt/ros/kinetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/kinetic/lib/librostime.so;general;/opt/ros/kinetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
@@ -436,6 +436,12 @@ mybot_navigation_BINARY_DIR:STATIC=/home/bolduc/AUE893_Bolduc/build/mybot_naviga
 
 //Value Computed by CMake
 mybot_navigation_SOURCE_DIR:STATIC=/home/bolduc/AUE893_Bolduc/src/mybot_navigation
+
+//Value Computed by CMake
+razor_imu_9dof_BINARY_DIR:STATIC=/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof
+
+//Value Computed by CMake
+razor_imu_9dof_SOURCE_DIR:STATIC=/home/bolduc/AUE893_Bolduc/src/razor_imu_9dof
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
@@ -611,7 +617,7 @@ CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
 CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

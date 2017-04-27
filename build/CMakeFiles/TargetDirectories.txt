@@ -111,3 +111,17 @@
 /home/bolduc/AUE893_Bolduc/build/driver_common/timestamp_tools/CMakeFiles/install/local.dir
 /home/bolduc/AUE893_Bolduc/build/driver_common/timestamp_tools/CMakeFiles/test.dir
 /home/bolduc/AUE893_Bolduc/build/driver_common/timestamp_tools/CMakeFiles/edit_cache.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/rebuild_cache.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/edit_cache.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/install.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/dynamic_reconfigure_gencfg.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/list_install_components.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/install/strip.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/install/local.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir
+/home/bolduc/AUE893_Bolduc/build/razor_imu_9dof/CMakeFiles/test.dir

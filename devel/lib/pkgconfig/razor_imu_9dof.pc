@@ -1,0 +1,8 @@
+prefix=/home/bolduc/AUE893_Bolduc/devel
+
+Name: razor_imu_9dof
+Description: Description of razor_imu_9dof
+Version: 1.1.1
+Cflags: -I/home/bolduc/AUE893_Bolduc/devel/include
+Libs: -L/home/bolduc/AUE893_Bolduc/devel/lib 
+Requires: dynamic_reconfigure
